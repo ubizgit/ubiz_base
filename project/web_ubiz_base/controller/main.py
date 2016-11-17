@@ -50,6 +50,11 @@ env.filters["json"] = json.dumps
 class DatabaseSelector(openerp.addons.web.controllers.main.Database):
 
     def _render_template(self, **d):
+        """
+        TO DO: Change database manager html
+            Change Logo select database
+            Change Title
+        """
         d.setdefault('manage', True)
         d['insecure'] = openerp.tools.config['admin_passwd'] == 'admin'
         d['list_db'] = openerp.tools.config['list_db']
