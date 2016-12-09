@@ -11,22 +11,12 @@
 
 		<template id="layout_inherite" name="Web layout" inherit_id="web.layout"
 			customize_show="True">
-			<xpath expr="//html" position="replace">
-				&lt;!DOCTYPE html&gt;
-				<html style="height: 100%">
-					<head>
-						<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-						<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-						<title>Ubiz</title>
-						<link rel="shortcut icon" href="/web_ubiz_base/static/src/img/favicon.ico"
-							type="image/x-icon" />
-						<link rel="stylesheet" href="/web/static/src/css/full.css" />
-						<t t-raw="head or ''" />
-					</head>
-					<body t-att-class="body_classname">
-						<t t-raw="0" />
-					</body>
-				</html>
+			<xpath expr="//title" position="replace">
+				<title>Ubiz</title>
+			</xpath>
+			<xpath expr="//link" position="replace">
+				<link rel="shortcut icon" href="/web_ubiz_base/static/src/img/favicon.ico"
+					type="image/x-icon" />
 			</xpath>
 		</template>
 
