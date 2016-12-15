@@ -13,3 +13,10 @@
 .modal .modal-header button.close {
     font-size: 18px;
 }
+.o_mail_annoying_notification_bar{
+	display:none !important;
+}
+
+.o_web_settings_dashboard_share{
+	display:none !important;
+}

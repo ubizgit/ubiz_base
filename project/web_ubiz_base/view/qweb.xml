@@ -7,4 +7,11 @@
 			<script type="text/javascript" src="/web_ubiz_base/static/src/js/web_dialog_size.js"></script>
 		</xpath>
 	</template>
+	<template>
+		<t t-extend="base.template">
+		    <t t-jquery="span.o_mail_request_permission" t-operation="replace">
+		        <li>new element</li>
+		    </t>
+		</t>
+	</template>
 </odoo>

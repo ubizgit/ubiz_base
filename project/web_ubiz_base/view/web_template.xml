@@ -9,6 +9,12 @@
 			</xpath>
 		</template>
 
+		<template id="menu_secondary_inherit" name="Remove Power By"
+			inherit_id="web.menu_secondary" customize_show="True">
+			<xpath expr="//div[@class='o_sub_menu_footer']" position="replace">
+			</xpath>
+		</template>
+
 		<template id="layout_inherite" name="Web layout" inherit_id="web.layout"
 			customize_show="True">
 			<xpath expr="//title" position="replace">
